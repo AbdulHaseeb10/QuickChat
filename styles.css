@@ -1,0 +1,63 @@
+body{
+    background-color: #fdf232;
+}
+
+h2{
+    font-family: 'Lobster';
+}
+
+.logo{
+    display: block; 
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container{
+    max-width: 955px;
+    background-color: #0a065c;
+    background-image: url("https://www.transparenttextures.com/patterns/escheresque-dark.png");
+    border-radius: 10px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-y: auto;
+    height: 70vh;
+}
+.message{
+    display: table;
+    width: auto;
+    max-width: 44%;
+    min-width: 24%;
+    background-color: #08a1e4;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 17px 12px;
+}
+.message:hover{
+    background-color:#0089c4 ;
+}
+.right{
+    float: right;
+    clear: both;
+}
+.left{
+ float: left;  
+ clear: both; 
+}
+#send-container{
+    max-width: 958px;
+}
+#message-input{
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 34px;
+}
+.button{
+    height: 34px;
+    border-radius: 5px;
+}
