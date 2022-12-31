@@ -1,4 +1,5 @@
-const io = require("socket.io")(8000)
+import PORT from "./constant";
+const io = require("socket.io")(PORT)
 const users = {}
 
 io.on('connection',socket=>{
