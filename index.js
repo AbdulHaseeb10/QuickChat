@@ -1,4 +1,4 @@
-import PORT from "constant";
+import PORT from "constant.js";
 const io = require("socket.io")(PORT)
 const users = {}
 
