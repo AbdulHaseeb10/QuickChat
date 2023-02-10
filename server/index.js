@@ -21,7 +21,3 @@ io.on('connection',socket=>{
         delete users[socket.id];
     })
 })
-
-app.listen(8000,()=>{
-    console.log('listening on port 8000');
-})
