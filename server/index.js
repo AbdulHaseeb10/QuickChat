@@ -1,5 +1,11 @@
 const io = require("socket.io")(8000)
+const express = require("express");
+const app =express();
 const users = {}
+
+app.get('/',(req,res)=>{
+    res.send("This is a quickchat application");
+})
 
 io.on('connection',socket=>{
     socket.on('new-user-joined',name=>{
@@ -14,4 +20,8 @@ io.on('connection',socket=>{
         socket.broadcast.emit('left',users[socket.id]);
         delete users[socket.id];
     })
+})
+
+app.listen(8000,()=>{
+    console.log('listening on port 8000');
 })
